@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-background text-text-primary font-sans antialiased;
+}
+
+::selection {
+  background: rgba(74, 127, 191, 0.28);
+  color: #0b1f3a;
+}
+
+@keyframes washDrift {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(3%, 4%, 0) scale(1.06);
+  }
+}
+
+@keyframes markGrow {
+  from {
+    background-size: 0% 2px;
+  }
+  to {
+    background-size: 100% 2px;
+  }
+}
+
+@layer utilities {
+  .hero-wash {
+    background:
+      radial-gradient(900px 420px at 50% -10%, rgba(74, 127, 191, 0.22), transparent 60%),
+      radial-gradient(700px 360px at 88% 18%, rgba(18, 48, 86, 0.08), transparent 55%),
+      #f4f7fb;
+  }
+
+  .hero-wash::before {
+    content: "";
+    position: absolute;
+    inset: -30% -10% auto -10%;
+    height: 70%;
+    background: radial-gradient(
+      520px 280px at 50% 40%,
+      rgba(74, 127, 191, 0.28),
+      transparent 70%
+    );
+    animation: washDrift 18s ease-in-out infinite;
+    pointer-events: none;
+  }
+
+  .accent-mark {
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0 92%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    animation: markGrow 700ms 650ms ease forwards;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee,
+  .animate-fadeUp,
+  .animate-pageIn,
+  .animate-washDrift,
+  .animate-markGrow,
+  .hero-wash::before,
+  .accent-mark {
+    animation: none !important;
+  }
+
+  .hero-wash::before {
+    transform: none;
+  }
+
+  .accent-mark {
+    background-size: 100% 2px;
+  }
+
+  .motion-safe-fade {
+    transform: none !important;
+    opacity: 1 !important;
+    transition: none !important;
+  }
+}

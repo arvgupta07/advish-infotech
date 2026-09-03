@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" role="img" aria-labelledby="logoTitle">
+  <title id="logoTitle">Advish Infotech</title>
+  <rect width="64" height="64" rx="18" fill="#FF5C00"/>
+  <path d="M16 44 L32 16 L48 44" stroke="#FFFFFF" stroke-width="3.4" stroke-linejoin="round" fill="none"/>
+  <path d="M22.5 34 H41.5" stroke="#FFE6D6" stroke-width="3.2" stroke-linecap="round"/>
+</svg>
