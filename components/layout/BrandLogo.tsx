@@ -6,7 +6,7 @@ interface BrandLogoProps {
   height?: number;
 }
 
-export function BrandLogo({ className = "", height = 96 }: BrandLogoProps) {
+export function BrandLogo({ className = "", height = 68 }: BrandLogoProps) {
   const width = Math.round(height * 3.6);
 
   return (
@@ -16,7 +16,7 @@ export function BrandLogo({ className = "", height = 96 }: BrandLogoProps) {
         alt="Advish Infotech"
         width={width}
         height={height}
-        className="h-16 w-auto md:h-24"
+        className="h-12 w-auto md:h-[4.25rem]"
         priority
       />
     </Link>
