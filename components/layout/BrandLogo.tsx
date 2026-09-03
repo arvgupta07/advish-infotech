@@ -6,8 +6,8 @@ interface BrandLogoProps {
   height?: number;
 }
 
-export function BrandLogo({ className = "", height = 64 }: BrandLogoProps) {
-  const width = Math.round(height * 3.2);
+export function BrandLogo({ className = "", height = 96 }: BrandLogoProps) {
+  const width = Math.round(height * 3.6);
 
   return (
     <Link href="/" className={`inline-flex items-center ${className}`}>
@@ -16,7 +16,7 @@ export function BrandLogo({ className = "", height = 64 }: BrandLogoProps) {
         alt="Advish Infotech"
         width={width}
         height={height}
-        className="h-14 w-auto md:h-16"
+        className="h-16 w-auto md:h-24"
         priority
       />
     </Link>

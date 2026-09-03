@@ -24,7 +24,7 @@ export default function TermsPage() {
         </p>
         <p>
           All trademarks and copy on this site belong to Advish Infotech unless
-          otherwise noted. For questions, contact hello@advishinfotech.com.
+          otherwise noted. For questions, contact ak@advishinfotech.in.
         </p>
       </div>
     </div>

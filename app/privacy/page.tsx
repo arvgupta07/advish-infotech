@@ -25,7 +25,7 @@ export default function PrivacyPage() {
         </p>
         <p>
           You may request access, correction, or deletion of your enquiry data by
-          emailing hello@advishinfotech.com. This site does not use advertising
+          emailing ak@advishinfotech.in. This site does not use advertising
           pixels or a payment processor.
         </p>
       </div>

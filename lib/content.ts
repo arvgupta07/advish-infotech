@@ -10,8 +10,8 @@ import type {
 export const SITE = {
   name: "Advish Infotech",
   tagline: "Intelligent Operations. Scalable Growth.",
-  email: "hello@advishinfotech.com",
-  city: "Bangalore, India",
+  email: "ak@advishinfotech.in",
+  city: "Gurgaon, India",
   description:
     "Advish Infotech delivers AI-powered BPO, CRM integration, and contact center solutions that reduce manual work and give your team back the time to grow.",
 };
