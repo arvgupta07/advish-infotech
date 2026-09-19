@@ -26,6 +26,10 @@ export const metadata: Metadata = {
   },
   description: SITE.description,
   metadataBase: new URL("https://advishinfotech.com"),
+  icons: {
+    icon: [{ url: "/icon.png", type: "image/png" }],
+    apple: [{ url: "/apple-icon.png", type: "image/png" }],
+  },
 };
 
 export default function RootLayout({
